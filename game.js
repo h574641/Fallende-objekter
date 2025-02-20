@@ -42,7 +42,7 @@ function createFallingObject() {
         if (objectY > playerY && objectY < playerY + 40 && 
             parseInt(obj.style.left) > playerX && parseInt(obj.style.left) < playerX + 40) {
             gameOver = true;
-            alert("Spill er over! Din poengsum: " + score);
+            alert("Spillet er over! Din poengsum: " + score);
         }
 
         // Remove object when it goes off-screen

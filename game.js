@@ -1,6 +1,6 @@
-const gameArea = document.getElementById('gameArea');
-const player = document.getElementById('player');
-const scoreDisplay = document.getElementById('score');
+let gameArea = document.getElementById('gameArea');
+let player = document.getElementById('player');
+let scoreDisplay = document.getElementById('score');
 let score = 0;
 let gameOver = false;
 
@@ -42,7 +42,7 @@ function createFallingObject() {
         if (objectY > playerY && objectY < playerY + 40 && 
             parseInt(obj.style.left) > playerX && parseInt(obj.style.left) < playerX + 40) {
             gameOver = true;
-            alert("Game Over! Your score: " + score);
+            alert("Spill er over! Din poengsum: " + score);
         }
 
         // Remove object when it goes off-screen
